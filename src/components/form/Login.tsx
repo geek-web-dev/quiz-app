@@ -35,8 +35,7 @@ const Login = () => {
   };
 
   return (
-    //
-    <div className="min-w-[600px] bg-white/25 rounded-md p-4 backdrop-blur-sm mx-auto absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+    <div className="max-w-[600px] bg-white/25 rounded-md p-4 backdrop-blur-sm mx-auto">
       <h1 className="font-semibold text-3xl mb-8 text-white">Login</h1>
       <form className="space-y-4" onSubmit={submit}>
         <Input

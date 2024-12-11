@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import QuizPage from "../pages/QuizPage";
 import NotFound from "../pages/NotFound";
-import AuthPage from "../pages/AuthPage";
 import MainLayout from "../layout/MainLayout";
 import OverViewPage from "../pages/OverViewPage";
 import AuthLayout from "../layout/AuthLayout";
 import AboutPage from "../pages/AboutPage";
 import SettingsPage from "../pages/SettingsPage";
+import Login from "../components/form/Login";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
   {
     path: "/auth",
     element: <AuthLayout />,
-    children: [{ path: "/auth/login", element: <AuthPage /> }],
+    children: [{ path: "/auth/login", element: <Login /> }],
   },
   { path: "*", element: <NotFound /> },
 ]);
